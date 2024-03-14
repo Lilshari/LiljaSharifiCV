@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    font-weight: 200;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    padding: 0px 10%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #000000;
+    border-bottom: 2px solid #6E2AF5;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #01CABD;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/*-- ----------Intro--------- */
+
+#Intro {
+    padding: 90px 0px;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Intro-col-1 {
+    flex-basis: 45%;
+}
+
+.Intro-col-1 h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.Intro-col-1 h1 span {
+    color: #6E2AF5;
+}
+
+.Intro-col-2 {
+    flex-basis: 55%;
+}
+
+.Intro-col-2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/* -----------Minusta--------- */
+
+#Minusta {
+    padding: 200px 0;
+    color: #fff;
+}
+
+.Minusta-col-1 {
+    flex-basis: 40%;
+}
+
+.Minusta-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.Minusta-col-2 {
+    flex-basis: 55%;
+}
+
+.sub-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #01CABD;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #6E2AF5;
+    font-size: 16px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/* -----------CV--------- */
+
+#CV {
+    padding: 80px 0;
+    color: #fff;
+}
+
+.CV-col-1 {
+    flex-basis: 40%;
+}
+
+.CV-col-2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.CV-col-2 {
+    flex-basis: 55%;
+}
+
+.sub-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #6E2AF5;
+    margin-bottom: 20px;
+}
+
+
+/* --------Ota yhteyttä-------- */
+
+.Ota_yhteyttä-left {
+    flex-basis: 35%;
+}
+
+.Ota_yhteyttä-right {
+    flex-basis: 60%;
+}
+
+.Ota_yhteyttä-left p {
+    margin-top: 30px;
+}
+
+.Ota_yhteyttä-left p i {
+    color: #01CABD;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #01CABD;
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6E2AF5;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+}
+
+.Ota_yhteyttä-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+/*---------------------css for small screens ----------------------*/
+
+@media only screen and (max-width: 600px) {
+    nav. fas {
+        display: none;
+    }
+    nav ul li {
+        margin: 10px 4px;
+    }
+    #Intro {
+        padding: 100px 0px;
+    }
+    .Intro-col-2 {
+        flex-basis: 100%;
+    }
+    .Intro-col-2 img {
+        margin-top: 20px;
+    }
+    #Minusta {
+        padding: 50px 0;
+    }
+    .Minusta-col-1 {
+        flex-basis: 100%;
+    }
+    .Minusta-col-2 {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    #CV {
+        padding: 50px 0;
+    }
+    .CV-col-1,
+    .CV-col-2 {
+        flex-basis: 100%;
+        padding: 25px 0px;
+    }
+}
+
+#Ota_yhteyttä {
+    padding: 50px 0px;
+}
+
+.Ota_yhteyttä-right {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+
+.Ota_yhteyttä-left {
+    flex-basis: 100%;
+    width: 100%;
+}
