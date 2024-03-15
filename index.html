@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - LILJA SHARIFI</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="Logo">
+                <ul>
+                    <li><a href="#Intro">Etusivu</a></li>
+                    <li><a href="#Minusta">Minusta</a></li>
+                    <li><a href="#CV">CV</a></li>
+                    <li><a href="#Ota_yhteyttä">Ota yhteyttä</a></li>
+                </ul>
+            </nav>
+        </div class="header-text">
+    </div>
+    <!-- ---------Intro--------- -->
+    <div id="Intro">
+        <div class="container">
+            <div class="row">
+                <div class="Intro-col-1">
+                    <p>ICT-ALAN ASIANTUNTIJA</p>
+                    <h1>Hei! <br> Tervetuloa sivuilleni <br> <span> Olen Lilja </span> <br> </h1>
+                </div>
+                <div class="Intro-col-2">
+                    <img src="images/Lilja.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------Minusta--------- -->
+    <div id="Minusta">
+        <div class="container">
+            <div class="row">
+                <div class="Minusta-col-1">
+                    <img src="images/Minusta.png">
+                </div>
+                <div class="Minusta-col-2">
+                    <h1 class="sub-title">Minusta</h1>
+                    <p>Olen motivoitunut oppimaan jatkuvasti uutta ja pysymään ajan tasalla alan kehityksestä. IT-ala on intohimoni, joka syttyy jokaisesta uudesta teknologiasta, jokaisesta ratkaistusta koodausongelmasta ja jokaisesta mahdollisuudesta luoda
+                        jotain uutta ja innovatiivista tietojenkäsittelyn maailmassa.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Taidot')">Taidot</p>
+                        <p class="tab-links" onclick="opentab('Työkokemus')">Työkokemus</p>
+                        <p class="tab-links" onclick="opentab('Koulutus')">Koulutus</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Taidot">
+                        <ul>
+                            <li><span>B2B ja B2C myyntikokemus</span><br>ERP ja CRM-järjestelmien asiantuntevuus </li>
+                            <li><span>Digitaalisen palvelun muotoilu</span><br>Käyttäjäkokemus ja kehittäminen</li>
+                            <li><span>Asiakaspalvelun moniosaaja</span><br>ICT-alan sekä rahoitusalan tuntemus</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Työkokemus">
+                        <ul>
+                            <li><span>2023/10 - nykyhetki </span><br>Säveltäjäin Tekijänoikeustoimisto Teosto ry / Asiakasneuvoja</li>
+                            <li><span>2023</span><br>S-Business / Asiaksneuvoja</li>
+                            <li><span>2021 - 2022 </span><br>Petri Kolmonen Oy / Myyjä</li>
+                            <li><span>2020 - 2021 </span><br> Alma Talent / Asiakasneuvoja </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Koulutus">
+                        <ul>
+                            <li><span>2023-2024</span><br>Haaga-Helian avoin ammattikorkea koulu<br></span>
+                            </li>
+                            <li><span>2019</span><br>Hiusalan perustutkinto / Stadin Ammattiopisto</li>
+                            <li><span>2009</span><br>Alppilan peruskoulu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- ---------CV-------------- -->
+    <div id="CV">
+        <div class="container">
+            <div class="row">
+                <div class="CV-col-1">
+                    <h1 class="sub-title">CV</h1>
+                    <p>Tässä tiivistetysti taustani ja ammatillinen osaamiseni. CV:ssä pääset tutustumaan tarkemmin koulutustaustaani, työkokemukseen, sekä taitoihin ja saavutuksiin eri työtehtävissä. Pyrin tuomaan esiin kaiken sen, mikä tekee minusta ainutlaatuisen
+                        ja ammattitaitoisen tekijän.</p>
+                </div>
+                <div class="CV-col-2">
+                    <img src="images/CV.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------Ota yhteyttä-------------- -->
+    <div id="Ota_yhteyttä">
+        <div class="container">
+            <div class="row">
+                <div class="Ota_yhteyttä-left">
+                    <h1 class="sub-title">Ota_yhteyttä</h1>
+                    <p><i class="fas fa-paper-plane"></i>lilja.s@live.fi</p>
+                    <p><i class="fas fa-phone-square-alt"></i>040 123 123</p>
+                    <div class="social-icons">
+                        <a href=https://www.linkedin.com/in/lilja-sharifi-62b5ab136><i class="fab fa-linkedin"></i></a>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    </div>
+                    <a href="images/CV.pdf" download class="btn">Lataa CV</a>
+                </div>
+                <div class=Ota_yhteyttä-right>
+                    <form>
+                        <input type="text" name="Name" placeholder="Nimi" required>
+                        <input type="email" name="email" placeholder="Sähköposti" required>
+                        <textarea name="Message" rows="6" placeholder="Viesti"></textarea>
+                        <button type="submit" class="btn">Lähetä</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Lilja </p>
+        </div>
+    </div>
+
+</html>
